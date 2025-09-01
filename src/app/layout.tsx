@@ -31,6 +31,27 @@ export const metadata: Metadata = {
     'gastronomie française',
     'restaurant 78'
   ],
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/logo.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/logo.png', sizes: '180x180' },
+    ],
+  },
+  openGraph: {
+    title: 'Lokkum Steakhouse - L\'Art de la Viande d\'Exception',
+    description: 'Restaurant gastronomique spécialisé dans les pièces de bœuf d\'exception à Buchelay.',
+    images: [
+      {
+        url: '/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Lokkum Steakhouse',
+      }
+    ],
+  },
 };
 
 interface RootLayoutProps {

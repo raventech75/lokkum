@@ -15,17 +15,17 @@ import {
 
 const heroImages = [
   {
-    src: 'https://images.unsplash.com/photo-1554679665-f5537cf74366?w=1920&h=1080&fit=crop',
+    src: 'https://images.unsplash.com/photo-1554679665-f5537cf74366?auto=format&fit=crop&w=1920&h=1080&q=80',
     alt: 'Steaks premium grillés à la perfection',
     title: 'L\'Art de la Viande d\'Exception'
   },
   {
-    src: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=1920&h=1080&fit=crop',
+    src: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&h=1080&q=80',
     alt: 'Intérieur élégant du restaurant',
     title: 'Une Ambiance Raffinée'
   },
   {
-    src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1920&h=1080&fit=crop',
+    src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1920&h=1080&q=80',
     alt: 'Chef préparant une pièce de bœuf',
     title: 'Savoir-Faire Artisanal'
   }
@@ -60,18 +60,18 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Images Slider */}
+       {/* Background Images Slider - CORRIGÉ */}
       <div className="absolute inset-0 z-0">
         {heroImages.map((image, index) => (
           <motion.div
             key={index}
             className="absolute inset-0"
-            initial={{ opacity: 0, scale: 1.1 }}
+            initial={{ opacity: 0, scale: 1.05 }}
             animate={{
               opacity: currentImageIndex === index ? 1 : 0,
-              scale: currentImageIndex === index ? 1 : 1.1,
+              scale: currentImageIndex === index ? 1 : 1.05,
             }}
-            transition={{ duration: 1.5, ease: 'easeInOut' }}
+            transition={{ duration: 1.2, ease: [0.4, 0, 0.2, 1] }}
           >
             <Image
               src={image.src}
@@ -79,7 +79,9 @@ export function HeroSection() {
               fill
               className="object-cover"
               priority={index === 0}
-              quality={90}
+              quality={index === 0 ? 95 : 80}
+              sizes="100vw"
+              loading={index === 0 ? 'eager' : 'lazy'}
             />
             <div className="absolute inset-0 bg-gradient-overlay" />
           </motion.div>

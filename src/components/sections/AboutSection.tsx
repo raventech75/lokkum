@@ -200,15 +200,15 @@ export function AboutSection() {
                   src="https://images.unsplash.com/photo-1552566820-dbc4d4a87dc3?w=400&h=400&fit=crop"
                   alt="Ambiance raffinée du restaurant"
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-700"
+                  className="object-cover hover:scale-15 transition-transform duration-700"
                 />
               </div>
               <div className="aspect-square rounded-xl overflow-hidden shadow-gold">
                 <Image
-                  src="https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop"
+                  src=""
                   alt="Pièce de bœuf grillée à la perfection"
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-700"
+                  className="object-cover hover:scale-15 transition-transform duration-700"
                 />
               </div>
             </div>

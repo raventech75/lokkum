@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/Button';
@@ -86,15 +87,22 @@ export function Navigation() {
             <Link
               href="/"
               className="flex items-center space-x-3 group"
+              aria-label="Lokkum Steakhouse - Retour à l'accueil"
             >
               <div className="relative">
-                <div className="w-12 h-12 bg-gradient-gold rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-luxury-black font-bold text-xl font-serif">L</span>
-                </div>
-                <div className="absolute -inset-1 bg-luxury-gold/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <Image
+                  src="/logo.png"
+                  alt="Lokkum Steakhouse"
+                  width={50}
+                  height={50}
+                  priority
+                  className="h-12 lg:h-14 w-auto transition-all duration-300 group-hover:scale-105"
+                />
+                {/* Effet de lueur au hover */}
+                <div className="absolute inset-0 -z-10 bg-luxury-gold/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
               </div>
               <div className="hidden sm:block">
-                <div className="text-xl font-serif font-bold text-luxury-cream group-hover:text-luxury-gold transition-colors duration-200">
+                <div className="text-xl font-serif font-bold text-red-500 group-hover:text-red-400 transition-colors duration-200">
                   Lokkum
                 </div>
                 <div className="text-sm text-luxury-cream/70 -mt-1">

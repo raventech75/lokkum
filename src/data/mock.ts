@@ -103,28 +103,28 @@ export const restaurantInfo: Restaurant = {
   ] as Amenity[],
   images: {
     hero: [
-      'https://images.unsplash.com/photo-1554679665-f5537cf74366?w=1920&h=1080&fit=crop',
-      'https://images.unsplash.com/photo-1544025162-d76694265947?w=1920&h=1080&fit=crop',
-      'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1920&h=1080&fit=crop'
+      'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1920&h=1080&q=80',
+      'https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?auto=format&fit=crop&w=1920&h=1080&q=80',
+      'https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1920&h=1080&q=80'
     ],
     interior: [
-      'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1552566820-dbc4d4a87dc3?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1578474846511-04ba529f0b88?w=800&h=600&fit=crop'
+      'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&h=600&q=80',
+      'https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=800&h=600&q=80',
+      'https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=800&h=600&q=80'
     ],
     exterior: [
-      'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&h=600&fit=crop'
+      'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&h=600&q=80',
+      'https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&h=600&q=80'
     ],
     food: [
-      'https://images.unsplash.com/photo-1558030006-450675393462?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=800&h=600&fit=crop'
+      'https://unsplash.com/fr/photos/viande-grillee-a-la-tomate-et-aux-legumes-verts-a-la-poele-noire-eZu7MRgi-mM?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash',
+      'https://unsplash.com/fr/photos/viande-grillee-a-la-tomate-et-aux-legumes-verts-a-la-poele-noire-eZu7MRgi-mM?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash',
+      'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=400&h=400&q=80',
+      'https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=400&h=400&q=80'
     ],
     team: [
-      'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=400&fit=crop'
+      'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=400&h=400&q=80',
+      'https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=400&h=400&q=80'
     ]
   },
   socialMedia: {
@@ -148,7 +148,7 @@ export const menuCategories: MenuCategory[] = [
         name: 'Foie Gras de Canard Mi-Cuit',
         description: 'Foie gras artisanal, chutney de figues, brioche toastée et fleur de sel de Guérande',
         price: 28,
-        image: 'https://images.unsplash.com/photo-1559847844-d721426d6edc?w=400&h=300&fit=crop',
+        image: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=400&h=300&q=80',
         allergens: ['gluten', 'œufs'],
         dietary: [],
         ingredients: ['foie gras de canard', 'figues', 'brioche', 'fleur de sel'],
@@ -159,7 +159,7 @@ export const menuCategories: MenuCategory[] = [
         name: 'Tartare de Saumon Écossais',
         description: 'Saumon fumé label rouge, avocat, câpres, citron vert et toast de pain noir',
         price: 22,
-        image: 'https://images.unsplash.com/photo-1565299585323-38174c4a6341?w=400&h=300&fit=crop',
+        image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=400&h=300&q=80',
         allergens: ['poisson', 'gluten'],
         dietary: [],
         ingredients: ['saumon écossais', 'avocat', 'câpres', 'citron vert']
@@ -169,7 +169,7 @@ export const menuCategories: MenuCategory[] = [
         name: 'Escargots de Bourgogne',
         description: 'Six escargots au beurre persillé, ail et fines herbes, pain de campagne',
         price: 16,
-        image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop',
+        image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=400&h=300&q=80',
         allergens: ['gluten', 'lait'],
         dietary: [],
         ingredients: ['escargots', 'beurre', 'persil', 'ail']
@@ -188,7 +188,7 @@ export const menuCategories: MenuCategory[] = [
         name: 'Côte de Bœuf Black Angus',
         description: 'Pièce de 800g maturée 28 jours, pommes grenailles, légumes de saison',
         price: 85,
-        image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop',
+        image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&h=300&q=80',
         allergens: [],
         dietary: [],
         ingredients: ['côte de bœuf Black Angus', 'pommes grenailles', 'légumes de saison'],
@@ -206,7 +206,7 @@ export const menuCategories: MenuCategory[] = [
         name: 'Filet de Bœuf Wagyu A5',
         description: 'Pièce exceptionnelle de 250g, purée de truffe, jus corsé',
         price: 120,
-        image: 'https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=300&fit=crop',
+        image: 'https://images.unsplash.com/photo-1625300105749-77d295c0f278?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2FneXV8ZW58MHx8MHx8fDI=80',
         allergens: ['lait'],
         dietary: [],
         ingredients: ['filet Wagyu A5', 'truffe noire', 'pommes de terre'],
@@ -217,7 +217,7 @@ export const menuCategories: MenuCategory[] = [
         name: 'Entrecôte de Salers',
         description: 'Pièce de 350g, beurre maître d\'hôtel, frites maison',
         price: 35,
-        image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop',
+        image: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=400&h=300&q=80',
         allergens: ['lait', 'gluten'],
         dietary: [],
         ingredients: ['entrecôte Salers', 'beurre', 'pommes de terre'],
@@ -264,7 +264,7 @@ export const menuCategories: MenuCategory[] = [
         name: 'Tarte au Chocolat Valrhona',
         description: 'Chocolat noir 70%, crème anglaise vanille, éclats de cacao',
         price: 14,
-        image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop',
+        image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=400&h=300&q=80',
         allergens: ['gluten', 'œufs', 'lait'],
         dietary: [],
         ingredients: ['chocolat Valrhona', 'crème anglaise', 'vanille'],
@@ -358,7 +358,7 @@ export const upcomingEvents: Event[] = [
     description: 'Soirée dégustation avec notre sommelier autour des grands crus de Bordeaux, accompagnée d\'une sélection de charcuterie fine.',
     date: new Date('2024-09-15'),
     type: 'wine_tasting',
-    image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&h=400&fit=crop',
+    image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&h=400&q=80',
     price: 85,
     maxCapacity: 20,
     currentBookings: 12,
@@ -374,7 +374,7 @@ export const upcomingEvents: Event[] = [
     description: 'Expérience exclusive avec notre chef : menu dégustation 7 services, accords mets-vins inclus.',
     date: new Date('2024-10-20'),
     type: 'chef_table',
-    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=400&fit=crop',
+    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&h=400&q=80',
     price: 150,
     maxCapacity: 8,
     currentBookings: 3,

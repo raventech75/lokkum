@@ -92,14 +92,17 @@ export function MenuHighlights() {
               transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
               className="group card-luxury p-6 hover:shadow-2xl"
             >
-              {/* Image */}
+              {/* Image - CORRIGÉ pour éviter le flou */}
               {item.image && (
-                <div className="aspect-square rounded-xl overflow-hidden mb-6 relative">
+                <div className="aspect-square rounded-xl overflow-hidden mb-6 relative bg-luxury-charcoal/50">
                   <Image
                     src={item.image}
                     alt={item.name}
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="object-cover transition-transform duration-300 ease-out hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                    quality={85}
+                    loading="lazy"
                   />
                   
                   {/* Badges */}

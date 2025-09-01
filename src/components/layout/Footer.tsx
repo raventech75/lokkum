@@ -76,15 +76,20 @@ export function Footer() {
             className="lg:col-span-2 space-y-6"
           >
             <div>
-              <Link href="/" className="flex items-center space-x-3 group">
+              <Link href="/" className="flex items-center space-x-3 group" aria-label="Lokkum Steakhouse">
                 <div className="relative">
-                  <div className="w-16 h-16 bg-gradient-gold rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-luxury-black font-bold text-2xl font-serif">L</span>
-                  </div>
-                  <div className="absolute -inset-1 bg-luxury-gold/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <Image
+                    src="/logo.png"
+                    alt="Lokkum Steakhouse"
+                    width={50}
+                    height={50}
+                    className="h-10 w-auto transition-all duration-300 group-hover:scale-105"
+                  />
+                  {/* Effet de lueur au hover */}
+                  <div className="absolute inset-0 -z-10 bg-luxury-gold/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
                 </div>
                 <div>
-                  <div className="text-2xl font-serif font-bold text-luxury-cream">
+                  <div className="text-2xl font-serif font-bold text-red-500">
                     Lokkum Steakhouse
                   </div>
                   <div className="text-luxury-gold text-sm">
